@@ -13,8 +13,8 @@ def viewusers():
     db1 = db.get_db()
     cursor = db1.execute('select id, name, age from users')
     results = cursor.fetchall()
-    return "<h1> Welcome to Users </h1>"
-    #return f"<h1>The Id is {results[0]['id']}.<br> The Name is {results[0]['name']}. <br> The age is {results[0]['age']}. </h1>"
+    #return "<h1> Welcome to Users </h1>"
+    return f"<h1>The Id is {results[0]['id']}.<br> The Name is {results[0]['name']}. <br> The age is {results[0]['age']}. </h1>"
 
 
 #CREATE
