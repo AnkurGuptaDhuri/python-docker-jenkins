@@ -1,4 +1,4 @@
-FROM alpine
+FROM python:3.8.2-alpine3.11
 
 ENV FLASK_ENV=development
 
